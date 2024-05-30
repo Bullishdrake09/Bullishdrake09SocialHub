@@ -52,6 +52,24 @@
                 (video.volume = 1), 0;
                 video.play();
             }
+            function simulateClick() {
+                var iframe = document.querySelector('.fullscreen-bg iframe');
+                var rect = iframe.getBoundingClientRect();
+                var x = rect.left + (rect.width / 2);
+                var y = rect.top + (rect.height / 2);
+                var clickEvent = new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true,
+                    clientX: x,
+                    clientY: y
+                });
+                iframe.dispatchEvent(clickEvent);
+            }
+
+            window.onload = function() {
+                setTimeout(simulateClick, 2000);  // Simulate click after 2 seconds
+            };
         </script>
         <input type="checkbox" autocomplete="off" id="overlay-toggle">
         <div class="overlay fullscreen">
