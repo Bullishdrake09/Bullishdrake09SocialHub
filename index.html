@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <title>Bullishdrake's Socials Hub</title>
     <link rel="icon" type="image/gif" href="https://media.discordapp.net/attachments/914333550839488572/915421699728609310/christianity.png">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -20,64 +21,65 @@
         -ms-user-select: none;
         user-select: none;
       }
+      .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+      }
+      .fullscreen-bg iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        pointer-events: none;
+      }
+      .text-content {
+        position: relative;
+        z-index: 1;
+      }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <main>
-      <script>
-        function audioPlay() {
-          var audio = document.getElementById("audio");
-          audio.volume = 0.0;
-          audio.play();
-        }
-        function videoPlay() {
-          var video = document.getElementById("video");
-          (video.volume = 1), 0;
-          video.play();
-        }
-      </script>
-      <input type="checkbox" autocomplete="off" id="overlay-toggle">
-      <input type="checkbox" autocomplete="off" id="overlay-toggle">
-      <div class="overlay fullscreen">
-        <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
-          <span class="no-hover" style="font-family: mono; font-size: 0.6em">tap to enter</span>
-          <span class="hover" style="font-family: mono; font-size: 0.6em">click to enter</span>
-        </label>
-      </div>
-      <audio loop="" preload="auto" id="audio">
-        <source src="https://docs.google.com/uc?export=download&id=1BrF2fgOtLP6nYjqCnsFMt7VBGDcOLS0F" type="audio/mp3">
-      </audio>
-      <video loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
-        <source src="https://docs.google.com/uc?export=download&id=1BrF2fgOtLP6nYjqCnsFMt7VBGDcOLS0F" type="video/mp4">
-      </video>
-      <section class="fullscreen text-content">
-        <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.4em #bababa">
-          Bullishdrake09 Socials Hub
-        </h1>
-        <div class="socials">
-          <a href="https://steamcommunity.com/profiles/76561199175070337/" class="unselectable" style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            ">Steam</a>
-          <a href="https://www.youtube.com/bullishdrake09/" class="unselectable" style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            ">Youtube</a>
-          <a href="https://www.tiktok.com/@bullishdrake/" class="unselectable" style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            ">Tiktok</a>
+        <script>
+            function audioPlay() {
+                var audio = document.getElementById("audio");
+                audio.volume = 0.0;
+                audio.play();
+            }
+            function videoPlay() {
+                var video = document.getElementById("video");
+                (video.volume = 1), 0;
+                video.play();
+            }
+        </script>
+        <input type="checkbox" autocomplete="off" id="overlay-toggle">
+        <div class="overlay fullscreen">
+            <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                <span class="no-hover" style="font-family: mono; font-size: 0.6em">tap to enter</span>
+                <span class="hover" style="font-family: mono; font-size: 0.6em">click to enter</span>
+            </label>
         </div>
-      </section>
+        <audio loop="" preload="auto" id="audio">
+            <source src="https://docs.google.com/uc?export=download&id=1BrF2fgOtLP6nYjqCnsFMt7VBGDcOLS0F" type="audio/mp3">
+        </audio>
+        <div class="fullscreen-bg">
+            <iframe src="https://replay.beatleader.xyz/?scoreId=15075746" allowfullscreen></iframe>
+        </div>
+        <section class="fullscreen text-content">
+            <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.4em #bababa">
+                Bullishdrake09 Socials Hub
+            </h1>
+            <div class="socials">
+                <a href="https://steamcommunity.com/profiles/76561199175070337/" class="unselectable" style="text-decoration: none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.4em #bababa;">Steam</a>
+                <a href="https://www.youtube.com/bullishdrake09/" class="unselectable" style="text-decoration: none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.4em #bababa;">Youtube</a>
+                <a href="https://www.tiktok.com/@bullishdrake/" class="unselectable" style="text-decoration: none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.4em #bababa;">Tiktok</a>
+            </div>
+        </section>
     </main>
-
-
-
-</body></html>
+</body>
+</html>
